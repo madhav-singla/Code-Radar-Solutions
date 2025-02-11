@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 int main() {
-    char a, b;
-    scanf("%c %c", &a, &b); 
-    printf("%s %s\n", a, b);
+    char a[100];  
+    char b[100];  
+    scanf("%[^\n] %[^\n]", a,b);  
+    printf("%s and %s", a,b);  
     return 0;
 }
