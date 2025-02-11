@@ -5,9 +5,9 @@ char* welcome() {
 }
 
 int main() {
-    int a ,b ,c;
+    float a ,b ,c;
     scanf("%d %d %d" , &a,&b,&c);
     int d = (a+b+c)/3;
-    printf("Average: %.2d", d);
+    printf("Average: %.2f", d);
     return 0;
 }
