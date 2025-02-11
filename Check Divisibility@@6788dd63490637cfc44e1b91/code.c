@@ -5,12 +5,15 @@ char* welcome() {
 }
 
 int main() {
-    int a ;
-    scanf("%d" , &a);
-    if(a%5==0 && b%11==0){
-        printf("Divisible");
-    }else{
-        printf("Not Divisible");
+    int a;
+    scanf("%d", &a);
+
+    if (a % 5 == 0 && a % 11 == 0) {
+        printf("Divisible\n");
+    } else {
+        printf("Not Divisible\n");
     }
+
     return 0;
 }
+
