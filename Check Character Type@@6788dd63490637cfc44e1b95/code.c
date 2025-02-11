@@ -10,12 +10,12 @@ if(isdigit(ch)){
     if(lower == 'a'||lower == 'e'||lower == 'i'||lower == 'o'||lower == 'u'){
         printf("Vowel\n");
         else{
-            printf("Consonant \n")
+            printf("Consonant \n");
         }
     }
 }
 else{
-    printf("Special Character \n")
+    printf("Special Character \n");
 }
     return 0;
 }
