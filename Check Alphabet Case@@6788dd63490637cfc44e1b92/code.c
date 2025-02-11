@@ -5,7 +5,7 @@ char* welcome() {
 }
 
 int main() {
-    char a ;
+    char a[1] ;
     scanf("%c" , &a);
 
     if(a>=A && a<=Z){
