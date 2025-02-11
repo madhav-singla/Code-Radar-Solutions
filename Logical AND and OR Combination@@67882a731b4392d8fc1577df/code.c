@@ -2,12 +2,12 @@
 
 int main() {
     int a, b;
-    scanf("%d %d", &a, &b);  // Read two integers
+    scanf("%d %d", &a, &b);  
 
-    if (a > 0 && b<0 ||a = 0 || b = 0) {
-        printf("True\n");  // Print "True" if a is greater than b
+    if (a > 0 && b<0 ||a == 0 || b == 0) {
+        printf("True\n");  
     } else {
-        printf("False\n");  // Print "False" if a is not greater than b (semicolon added)
+        printf("False\n");  
     }
 
     return 0;
