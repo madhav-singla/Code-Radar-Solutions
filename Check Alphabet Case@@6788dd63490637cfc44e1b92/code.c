@@ -9,7 +9,7 @@ int main() {
     scanf("%c" , &a);
 
     if(a>='A' && a<='Z'){
-        printf("uppercase");
+        printf("Uppercase");
     }else if(a>='a' && a<='z'){
         printf("Lowercase");
     }else{
