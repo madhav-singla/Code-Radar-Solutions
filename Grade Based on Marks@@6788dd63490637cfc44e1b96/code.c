@@ -14,7 +14,7 @@ if(a>=90){
 }else if(a>=70){
     printf("C");
 }
-}else if(a>=60){
+else if(a>=60){
     printf("D");
 }
 else if(a<60){
