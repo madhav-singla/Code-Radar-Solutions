@@ -13,7 +13,7 @@ int main() {
         if(b>c){
             printf("%d" , b);
         }else{
-            printf("%d" , c)
+            printf("%d" , c);
         }
     }else{
         printf("%d" , a);
