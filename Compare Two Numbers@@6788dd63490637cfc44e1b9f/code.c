@@ -7,9 +7,9 @@ int main() {
         printf("Equal");
     } else {
         if(a>b){
-            printf("First")
+            printf("First");
         }else{
-            printf("Secound")
+            printf("Secound");
         }
     }
 
