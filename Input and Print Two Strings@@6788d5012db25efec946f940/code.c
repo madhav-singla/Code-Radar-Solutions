@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    char a[100];  
-    char b[100];  
-    scanf("%[^\n] %[^\n]", a,b);  
-    printf("%s and %s", a,b);  
+    char str1[50], str2[50];  // Declare two character arrays to store words
+    scanf("%s %s", str1, str2);  // Read two words separately
+    printf("%s and %s\n", str1, str2);  // Print them separately
     return 0;
 }
