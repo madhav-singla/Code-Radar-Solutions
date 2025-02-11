@@ -5,7 +5,7 @@ int main() {
     scanf("%d %d", &a, &b);
 
     if (a == b**2) {
-        printf("Yess");
+        printf("Yes");
     } else {
         printf("No");
     }
