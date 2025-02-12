@@ -4,8 +4,8 @@ int main() {
     int n;
 
     scanf("%d", &n);
-    
 
+    // Ensure n is odd
     if (n % 2 == 0) {
         n++;
     }
@@ -13,7 +13,7 @@ int main() {
     int nsp = n / 2;  
     int nst = 1;      
 
-w
+
     for (int i = 0; i < (n + 1) / 2; i++) {
         for (int j = 0; j < nsp; j++) {
             printf(" ");
@@ -28,7 +28,6 @@ w
 
     nsp = 1;
     nst = n - 2;
-
 
     for (int i = 0; i < (n - 1) / 2; i++) {
         for (int j = 0; j < nsp; j++) {
