@@ -1,44 +1,30 @@
 #include <stdio.h>
 
 int main() {
-    int n;
+    int N;
+    scanf("%d", &N);
 
-    scanf("%d", &n);
+    int total_rows = 2 * N - 1;  
 
-    // Ensure n is odd
-    if (n % 2 == 0) {
-        n++;
-    }
+    for (int i = 1; i <= total_rows; i++) {
+        int spaces, stars;
+        
+        if (i <= N) {
+            spaces = N - i;
+            stars = 2 * i - 1;
+        } else {
+            // Lower half
+            spaces = i - N;
+            stars = 2 * (total_rows - i + 1) - 1;
+        }
 
-    int nsp = n / 2;  
-    int nst = 1;      
-
-
-    for (int i = 0; i < (n + 1) / 2; i++) {
-        for (int j = 0; j < nsp; j++) {
+        for (int j = 0; j < spaces; j++) {
             printf(" ");
         }
-        for (int k = 0; k < nst; k++) {
+        for (int j = 0; j < stars; j++) {
             printf("*");
         }
         printf("\n");
-        nsp--;
-        nst += 2;
-    }
-
-    nsp = 1;
-    nst = n - 2;
-
-    for (int i = 0; i < (n - 1) / 2; i++) {
-        for (int j = 0; j < nsp; j++) {
-            printf(" ");
-        }
-        for (int k = 0; k < nst; k++) {
-            printf("*");
-        }
-        printf("\n");
-        nsp++;
-        nst -= 2;
     }
 
     return 0;
