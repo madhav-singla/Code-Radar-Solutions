@@ -1,15 +1,20 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int n;
 
     scanf("%d", &n);
+    
 
-    int nsp = n / 2;
-    int nst = 1;
+    if (n % 2 == 0) {
+        n++;
+    }
 
-    for (int i = 0; i < n / 2 + 1; i++) {
+    int nsp = n / 2;  
+    int nst = 1;      
+
+w
+    for (int i = 0; i < (n + 1) / 2; i++) {
         for (int j = 0; j < nsp; j++) {
             printf(" ");
         }
@@ -24,7 +29,8 @@ int main()
     nsp = 1;
     nst = n - 2;
 
-    for (int i = 0; i < n / 2; i++) {
+
+    for (int i = 0; i < (n - 1) / 2; i++) {
         for (int j = 0; j < nsp; j++) {
             printf(" ");
         }
