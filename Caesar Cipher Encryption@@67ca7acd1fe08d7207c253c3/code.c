@@ -1,12 +1,3 @@
-#include <stdio.h>
-#include <stdbool.h>
-#include <math.h>
-#include <stdlib.h>
-#include <ctype.h>
-
-
-
-
 void caesarCipher(char message[], int shift, char encrypted[])
 {
     for (int i = 0; message[i] != '\0'; i++)
