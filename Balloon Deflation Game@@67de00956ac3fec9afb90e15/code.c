@@ -1,7 +1,7 @@
 void deflateBalloons(int arr[], int n)
 {
     int min = arr[0];
-    for (int i = 0; i < n; i++)
+    for (int i = 1; i < n; i++)
     {
         if (arr[i] < min)
         {
@@ -15,10 +15,10 @@ void deflateBalloons(int arr[], int n)
     int count = 0;
     for (int i = 0; i < n; i++)
     {
-        if (arr != 0)
+        if (arr[i] != 0)
         {
             count++;
         }
     }
-    printf("%d" , count);
+    printf("%d", count);
 }
