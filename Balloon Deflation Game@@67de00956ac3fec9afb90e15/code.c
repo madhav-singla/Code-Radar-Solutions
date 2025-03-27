@@ -7,7 +7,7 @@ void deflateBalloons(int arr[], int n)
         printf("%d\n", remaining);
 
         int min = 100000;
-        for (int i = 1; i < n; i++)
+        for (int i = 0; i < n; i++)
         {
             if (arr[i] < min && arr[i] > 0)
             {
