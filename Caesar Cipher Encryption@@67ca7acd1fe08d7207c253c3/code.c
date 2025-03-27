@@ -5,14 +5,16 @@ void caesarCipher(char message, int shift, char encrypted)
         char ch = message[i];
         if (isupper(ch))
         {
-            encrypted[i] = ((ch - 'A' + shift)%26) + 'A';
+            encrypted[i] = ((ch - 'A' + shift) % 26) + 'A';
         }
         if (islower(ch))
         {
-            encrypted[i] = ((ch - 'a' + shift)%26) + 'a';
+            encrypted[i] = ((ch - 'a' + shift) % 26) + 'a';
         }
-        else{
+        else
+        {
             encrypted[i] = ch;
         }
     }
+    encrypted[i] = '\0'
 }
