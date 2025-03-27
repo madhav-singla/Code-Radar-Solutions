@@ -23,29 +23,3 @@ void trackPlayerRanks(int ranked[], int n, int player[], int m, int result[]) {
         result[i] = j + 2; // Rank is (j+1), but since index starts at 0, add 1 more
     }
 }
-
-int main() {
-    int n, m;
-    scanf("%d", &n);
-    int ranked[200000];
-
-    for (int i = 0; i < n; i++) 
-        scanf("%d", &ranked[i]);
-
-    scanf("%d", &m);
-    int player[200000];
-
-    for (int i = 0; i < m; i++) 
-        scanf("%d", &player[i]);
-
-    int result[200000];
-
-    // Call function to compute ranks
-    trackPlayerRanks(ranked, n, player, m, result);
-
-    // Print results
-    for (int i = 0; i < m; i++) 
-        printf("%d\n", result[i]);
-
-    return 0;
-}
