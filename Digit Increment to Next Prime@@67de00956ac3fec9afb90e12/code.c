@@ -2,7 +2,7 @@
 
 int getNextPrimeDigit(int digit) {
     if (digit <= 1) return 2;
-    if (digit == 2 || digit == 3) return 3;
+    if (digit == 2 || digit == 3) return 5;
     if (digit == 4) return 5;
     if (digit == 5 || digit == 6) return 7;
     return 2; 
